@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Link.css';
 
 const Link = (props) => {
     return (
-        <a className={props.classes} href={props.url}>
+        <a className={styles.link} href={props.url}>
             {props.title}
         </a>
     );

@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "../Utils.css";
 
 const Icon = (props) => {
   return (
-    <div className={'circle ' + props.color}>
+    <div className={styles.circle + ' ' + props.color}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="80"

@@ -1,0 +1,24 @@
+.header {
+  background-color: #444444;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav {
+  color: white;
+}
+
+.menu {
+  background-color: #272822;
+  position: fixed;
+  padding-top: 60px;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all ease-out 0.25s;
+  z-index: 1;
+}
+
+.active {
+  transform: translateY(0);
+}

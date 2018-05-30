@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Link from './Link';
+import Link from '../Link/Link';
+import styles from './Navigation.css';
+import utilStyles from '../../Utils.css';
 
 class Navigation extends Component {
   constructor(props) {
@@ -29,22 +31,22 @@ class Navigation extends Component {
 
   render() {
     return (
-      <div className="nav">
-        <header className="header">
+      <div className={styles.nav}>
+        <header className={styles.header}>
           <button
             className={
-              "hamburger hamburger--3dx " +
-              (this.state.isActive ? "is-active" : "")
+              utilStyles.hamburger + ' ' + utilStyles['hamburger--3dx'] + ' ' +
+              (this.state.isActive ? utilStyles['is-active'] : '')
             }
             type="button"
             onClick={this.handleClick}
           >
-            <span className="hamburger-box">
-              <span className="hamburger-inner" />
+            <span className={utilStyles['hamburger-box']}>
+              <span className={utilStyles['hamburger-inner']} />
             </span>
           </button>
         </header>
-        <ul className={"menu " + (this.state.isActive ? "is-active" : "")}>
+        <ul className={styles.menu + ' ' + (this.state.isActive ? styles.active : '')}>
         {
           this.links().map((link) => {
             return (
