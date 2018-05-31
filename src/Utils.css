@@ -89,7 +89,10 @@
 .circle {
   border-radius: 50px;
   display: inline-block;
+  flex-shrink: 0;
+  margin-right: 15px;
   position: relative;
+  text-align: center;
   width: 100px;
   height: 100px;
 }

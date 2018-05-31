@@ -10,10 +10,13 @@ class App extends Component {
         <header className="App-header">
           <Navigation />
         </header>
-        <div className="content">
-          <TextItem iconColor={colors.red}/>
-          <TextItem iconColor={colors.green}/>
-          <TextItem iconColor={colors.blue}/>
+        <div className={styles.content}>
+          <TextItem iconColor={colors['icon-background']}/>
+          <TextItem iconColor={colors['icon-background']}/>
+          <TextItem iconColor={colors['icon-background']}/>
+          <TextItem iconColor={colors['icon-background']}/>
+          <TextItem iconColor={colors['icon-background']}/>
+          <TextItem iconColor={colors['icon-background']}/>
         </div>
       </div>
     );
