@@ -22,3 +22,12 @@
 .active {
   transform: translateY(0);
 }
+
+@media (min-width: 1280px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: static;
+    transform: translateY(0);
+  }
+}
